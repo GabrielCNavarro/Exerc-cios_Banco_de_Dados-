@@ -42,10 +42,10 @@ INSERT INTO tb_produtos(nome, quantidade, validade, preco, descricao)
 VALUES ("Melão", "15", "2024-10-15", 25.00, "Melão Gália");
 
 -- SELECT que retorne produtos com valor maior do que 500 ***
-SELECT * FROM tb_produtos WHERE salario > 500.00;
+SELECT * FROM tb_produtos WHERE preco > 500.00;
 
 -- SELECT que retorne produtos com valor menor do que 500
-SELECT * FROM tb_produtos WHERE salario < 500.00;
+SELECT * FROM tb_produtos WHERE preco < 500.00;
 
 -- Atualize um registro da tabela através de uma query de atualização
 UPDATE tb_produtos SET preco = 15.00 WHERE id = 1;

@@ -1,9 +1,9 @@
 -- Atividade 1
 
 -- Crie um banco de dados para um serviço de RH de uma empresa
-CREATE DATABASE db_empresaX;
+CREATE DATABASE db_rh;
 
-USE db_empresaX;
+USE db_rh;
 
 -- Crie uma tabela de colaboradores e determine 5 atributos relevantes
 CREATE TABLE tb_colaboradores(
@@ -33,14 +33,15 @@ INSERT INTO tb_colaboradores(nome, cargo, contato, salario, periodo)
 VALUES ("Froid", "Analista", "(11)95976-3228", 18000.00, "Noite");
 
 -- SELECT que retorne colaboradores com salário maior do que 2000 ***
-SELECT * FROM td_colaboradores WHERE salario > 2000.00;
+SELECT * FROM tb_colaboradores WHERE salario > 2000.00;
 
 -- SELECT que retorne colaboradores com salário maior do que 2000 ***
-SELECT * FROM td_colaboradores WHERE salario < 2000.00;
+SELECT * FROM tb_colaboradores WHERE salario < 2000.00;
 
 -- Atualize um registro da tabela através de uma query de atualização
 ALTER TABLE tb_colaboradores MODIFY salario DECIMAL(8,2);
 
+DROP DATABASE db_empresaX;
 
 
 
